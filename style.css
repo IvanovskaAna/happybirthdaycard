@@ -1,0 +1,153 @@
+body{
+    overflow-x: hidden;
+    font-family:'Comic Sans MS';
+}
+.body1{
+    background-color: rgb(225, 240, 218);
+}
+#Shemar{ 
+    margin-top: 2.5%;
+    align-items: center;
+}
+#Shemar:hover{
+    cursor: pointer;
+}
+.krava1{
+    margin-top: 35%;
+    float: left;
+    width:25vw;
+    height:50vh;
+} 
+.krava1:hover, .krava2:hover{
+    cursor: pointer;
+}
+
+.krava2{
+    margin-top: 35%;
+    float: right;
+    width:25vw;
+    height:50vh;
+}
+.homepage{
+    display: flex;
+    justify-content: space-around;
+}
+.kopce{
+    font-size: x-large;
+    padding: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+    background-color: rgb(191, 216, 175);
+    box-shadow: 16px 22px 47px 2px rgb(112, 112, 112); 
+}
+.kopce a{
+    text-decoration: none;
+    color: black;
+    font-family:'Comic Sans MS';
+    font-weight: bold;
+}
+.kopce:hover{
+    background-color: rgb(153, 188, 133);
+    box-shadow: 16px 22px 47px 2px rgb(76, 76, 76);
+}
+.body2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/564x/63/5f/34/635f3488a7e92065ad00659012a72778.jpg');
+    background-color: rgb(0, 0, 0);
+    
+}
+.birthdayCard{
+    position: relative;
+    width: 30vw;
+    height: 90vh;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 1s;
+}
+.birthdayCard:hover{
+    transform: perspective(2500px) rotate(5deg);
+    transition-delay: 200ms;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2), 0 10px 100px rgba(0,0,0,0.5);
+}
+.birthdayCard:hover .cardFront{
+    transition-delay: 200ms;
+    transform: rotateY(-160deg);
+}
+/* Sluze za da ne se glede teksto na hover */
+/* .birthdayCard:hover .happy{
+    visibility: hidden;
+} */
+.cardFront{
+    position: relative;
+    background-color: #a5e8d3;
+    width: 30vw;
+    height: 90vh;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2), 30 0 50px rgba(0,0,0,0.4);
+    transition: 0.6s;
+}
+.happy{
+    font-size: 7vh;
+    text-align: center;
+    color: #ff877d;
+    transition: 0.1s;
+}
+.decorations{
+    position: absolute;
+}
+.cake::before, .balloons::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 155px;
+    top: 95px;
+    left: 43px;
+}
+.cake::after, .balloons::after{
+    content: "";
+    position: absolute;
+    top: 94px;
+    left: 37px;
+}
+.balloons{
+    width: 29vw;
+    height: 51vh;
+}
+.leo{
+    margin-top: 10%;
+    margin-left: 8%;
+    width: 25vw;
+    height: 40vh;  
+}
+.cardInside{
+    position: absolute;
+    background-color: #b8f2e0;
+    width: 30vw;
+    height: 90vh;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+}
+p{
+    margin-left: 8vw;
+    margin-top: 40vh;
+}
+.name{
+    position: absolute;
+    left: 2%;
+    top: 35%;
+    font-size: 4vh;
+}
+.back{
+    text-align: center;
+    margin: 5% 2%;
+    font-size: 4vh;
+}
+
